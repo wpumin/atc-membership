@@ -1,6 +1,6 @@
 # ATC Membership (Beta version)
 
-ATC Membership is a beta platform which use to keep contact in Advance Technology Center at Accenture. ATC Membership platform builds on ReactJS and this project is a beta version. So, It can only support Thai users, Thai format on this site.
+ATC Membership is a beta platform which use to keep contact in Advance Technology Center at Accenture. ATC Membership platform builds on ReactJS and this project is a beta version. So, this can only support Thai users and Thai format to input data.
 
 ## Functionality Checklist
 
