@@ -43,4 +43,4 @@ npm run dev
 |  1  | Live Demo in local   | http://localhost:3000         |
 |  2  | JSON Server in local | http://localhost:3003/members |
 
-> Version: 1.0.0
+> Version: 1.0.2
