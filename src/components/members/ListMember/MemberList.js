@@ -19,7 +19,7 @@ const MemberList = (props) => {
         swalWithBootstrapButtons
             .fire({
                 title: 'Are you sure?',
-                text: 'You want to remove these member',
+                text: 'You want to remove these user',
                 icon: 'warning',
                 showCancelButton: true,
                 confirmButtonText: 'Yes',

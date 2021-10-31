@@ -235,7 +235,7 @@ const AddMember = () => {
                                  form-control`}
                                     id={field.name}
                                     aria-required="true"
-                                    placeholder={`enter your ${field.name}`}
+                                    placeholder={`Enter your ${field.name}`}
                                     {...register(field.name)}
                                 />
                                 <small
@@ -266,7 +266,7 @@ const AddMember = () => {
                             }`}
                             id="comment"
                             aria-required="true"
-                            placeholder="enter your comment"
+                            placeholder="Enter your comment"
                             rows="4"
                             {...register('comment')}
                         />
