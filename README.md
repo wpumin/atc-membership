@@ -21,12 +21,12 @@ ATC Membership is a beta platform which use to keep contact in Advance Technolog
 
 ## The way to see Prototyping, Live Demo, and result of survey
 
-| No  | Description                         | URL                    |
-| :-: | ----------------------------------- | ---------------------- |
-|  1  | Prototyping                         | https://bit.ly/2ZGiI8c |
-|  2  | Live Demo                           | -                      |
-|  3  | Accessibility score from Lighthouse | https://bit.ly/3nKulUb |
-|  4  | User Experience survey from HotJar  | -                      |
+| No  | Description                         | URL                                |
+| :-: | ----------------------------------- | ---------------------------------- |
+|  1  | Prototyping                         | https://bit.ly/2ZGiI8c             |
+|  2  | Live Demo                           | https://atc-membership.netlify.app |
+|  3  | Accessibility score from Lighthouse | https://bit.ly/3nKulUb             |
+|  4  | User Experience survey from HotJar  | -                                  |
 
 ## Setting up live server in local
 
