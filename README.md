@@ -2,7 +2,7 @@
 
 ![Demo Version](/src/images/demo.gif)
 
-_<p align="center"> Note: The purpose of this project is a case study - No purpose in mimicking brands </p>_
+_<p align="center"> Note: Please expect delay in my website response, Heroku server is in United State </p>_
 
 ATC Membership is a beta platform which use to keep contact in Advance Technology Center at Accenture. ATC Membership platform builds on ReactJS and this project is a beta version. So, this can only support Thai users and Thai format to input data.
 
