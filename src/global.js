@@ -237,7 +237,7 @@ export const GlobalStyles = createGlobalStyle`
 
   .swal2-title {
     font-size: clamp(23px, 75%, 28px) !important;
-}
+  }
 
   .swal2-html-container{
     font-size: clamp(16px, 75%, 18px) !important;
