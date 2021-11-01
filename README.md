@@ -79,5 +79,5 @@ _Checks aria attribute in my site_
 _Inspect the behavior of users when he/she use my platform_
 ![Heatmap Scrolling from HotJar image#1](/src/images/accessibility/heatmap.png)
 
-> Version: 1.1.2
+> Version: 1.1.0
 > Last update: 11/01/2021 18:00 GMT+7
