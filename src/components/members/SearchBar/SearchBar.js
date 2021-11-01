@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom'
 
 // svg img
 import ViewButton from '../../../images/close.svg'
+import LoadingIcon from '../../../images/loading_white.svg'
 
 const SearchBar = (props) => {
     const initialState = ''
@@ -13,6 +14,16 @@ const SearchBar = (props) => {
         setSearch(initialState)
     }
     const closeClasses = search ? 'close-button' : 'close-button hide'
+
+    const LoadingIconForSearch = () => {
+        return (
+            <img
+                src={LoadingIcon}
+                className="loading-icon"
+                alt="loading icon"
+            />
+        )
+    }
 
     useEffect(() => {
         setSearch(initialState)
@@ -43,7 +54,7 @@ const SearchBar = (props) => {
             </div>
             <small>{props.searchValue}</small>
             <button className="btn btn-primary" aria-label="submit button">
-                Search
+                Search {props.loadingForSearch && <LoadingIconForSearch />}
             </button>
         </form>
     )

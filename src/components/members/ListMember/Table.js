@@ -14,6 +14,7 @@ const Table = () => {
     let match = useRouteMatch()
     const [members, setMembers] = useState([])
     const [loading, setLoading] = useState(true)
+    const [loadingForSearch, setLoadingForSearch] = useState(false)
 
     useEffect(() => {
         loadMembers()
@@ -38,6 +39,7 @@ const Table = () => {
     }
 
     const searchHandler = async (e) => {
+        setLoadingForSearch(true)
         e.preventDefault()
         const query = e.target.elements.keyword.value
             .toString()
@@ -84,11 +86,17 @@ const Table = () => {
             .catch((err) => {
                 console.log(err)
             })
+            .finally(() => {
+                setLoadingForSearch(false)
+            })
     }
 
     return (
         <StyledTable>
-            <SearchBar onSubmit={searchHandler} />
+            <SearchBar
+                onSubmit={searchHandler}
+                loadingForSearch={loadingForSearch}
+            />
             {loading ? (
                 <Loading />
             ) : (

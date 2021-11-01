@@ -80,6 +80,16 @@ export const StyledTable = styled.div`
     .form-inline button {
         margin-left: 0.5rem;
         flex: 0.125;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-inline button img {
+        margin-left: 0.25rem;
+        width: 22px;
+        height: 100%;
     }
 
     .smart-input {

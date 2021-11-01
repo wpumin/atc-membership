@@ -89,16 +89,6 @@ const MemberList = (props) => {
         buttonsStyling: false,
     })
 
-    const WatchlistLoading = () => {
-        return (
-            <img
-                src={LoadingIcon}
-                className="loading-icon"
-                alt="loading icon"
-            />
-        )
-    }
-
     const NormalList = () => {
         return (
             <React.Fragment>
