@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 import ActionButtons from './ActionButtons'
-import { JSON_SERVER } from '../../../const/Constant'
 import { PATH } from '../../../const/Constant'
 import Swal from 'sweetalert2'
 
@@ -13,6 +12,7 @@ import ViewButton from '../../../images/view.svg'
 import LoadingIcon from '../../../images/loading_purple.svg'
 
 const MemberList = (props) => {
+    const { REACT_APP_JSON_SERVER } = process.env
     const members = props.data
     const pathFromProps = props.pathFromProps
 
@@ -38,7 +38,7 @@ const MemberList = (props) => {
                         timer: 2000,
                     }).then(async () => {
                         await axios
-                            .delete(`${JSON_SERVER}/members/${id}`)
+                            .delete(`${REACT_APP_JSON_SERVER}/members/${id}`)
                             .then(() => {
                                 console.log('member deleted!')
                             })
@@ -56,7 +56,10 @@ const MemberList = (props) => {
     const onWatchlistChange = async (presentMember) => {
         presentMember.watchlist = !presentMember.watchlist
         await axios
-            .put(`${JSON_SERVER}/members/${presentMember.id}`, presentMember)
+            .put(
+                `${REACT_APP_JSON_SERVER}/members/${presentMember.id}`,
+                presentMember
+            )
             .then(() => {
                 console.log('wathlist toggle!')
                 Swal.fire({

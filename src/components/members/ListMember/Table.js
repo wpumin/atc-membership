@@ -6,11 +6,11 @@ import SearchBar from '../SearchBar'
 import TableHeader from './TableHeader'
 import MemberList from './MemberList'
 import Loading from '../../UI/Loading'
-import { JSON_SERVER } from '../../../const/Constant'
 import { PATH } from '../../../const/Constant'
 import Swal from 'sweetalert2'
 
 const Table = () => {
+    const { REACT_APP_JSON_SERVER } = process.env
     let match = useRouteMatch()
     const [members, setMembers] = useState([])
     const [loading, setLoading] = useState(true)
@@ -22,7 +22,7 @@ const Table = () => {
 
     const loadMembers = async () => {
         await axios
-            .get(JSON_SERVER + '/members')
+            .get(REACT_APP_JSON_SERVER + '/members')
             .then((res) => {
                 setMembers(res.data)
             })
@@ -44,7 +44,7 @@ const Table = () => {
             .trim()
             .replace(/[^A-Z0-9\s-.]+/gi, '')
         await axios
-            .get(`${JSON_SERVER}/members?q=${query ? query : ' '}`)
+            .get(`${REACT_APP_JSON_SERVER}/members?q=${query ? query : ' '}`)
             .then((res) => {
                 setMembers(res.data)
                 if (match.path === `${PATH}`) {

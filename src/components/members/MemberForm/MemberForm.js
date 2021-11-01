@@ -6,7 +6,6 @@ import { StyledMemberForm } from './MemberForm.styled'
 import axios from 'axios'
 import { useHistory, useRouteMatch, Prompt } from 'react-router-dom'
 import Highlight from '../../UI/Highlight'
-import { JSON_SERVER } from '../../../const/Constant'
 import { PATH } from '../../../const/Constant'
 import Swal from 'sweetalert2'
 
@@ -35,6 +34,7 @@ const fieldList = [
 ]
 
 const MemberForm = () => {
+    const { REACT_APP_JSON_SERVER } = process.env
     let history = useHistory()
     let match = useRouteMatch()
     const { id } = match.params
@@ -50,7 +50,7 @@ const MemberForm = () => {
 
     const onSubmit = async (data) => {
         if (id) {
-            await axios.put(`${JSON_SERVER}/members/${id}`, data)
+            await axios.put(`${REACT_APP_JSON_SERVER}/members/${id}`, data)
             Swal.fire({
                 position: 'center',
                 icon: 'success',
@@ -64,7 +64,7 @@ const MemberForm = () => {
         } else {
             await setMember(data)
             await axios
-                .post(JSON_SERVER + '/members', data)
+                .post(REACT_APP_JSON_SERVER + '/members', data)
                 .then(() => {
                     Swal.fire({
                         position: 'center',
@@ -106,7 +106,7 @@ const MemberForm = () => {
 
     const loadMembers = async () => {
         await axios
-            .get(JSON_SERVER)
+            .get(REACT_APP_JSON_SERVER)
             .then((res) => {
                 setMember({ ...member, id: res.data[res.data.length] + 1 })
             })
@@ -120,7 +120,7 @@ const MemberForm = () => {
         if (id) {
             const loadMemberInfo = async (id) => {
                 await axios
-                    .get(`${JSON_SERVER}/members/${id}`)
+                    .get(`${REACT_APP_JSON_SERVER}/members/${id}`)
                     .then((res) => {
                         if (res.data) {
                             setMember(res.data)

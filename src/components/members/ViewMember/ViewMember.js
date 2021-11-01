@@ -6,17 +6,17 @@ import useAxios from '../../../hooks/useAxios'
 import Loading from '../../UI/Loading'
 import Item from './Item'
 import NotFound from '../../pages/NotFound'
-import { JSON_SERVER } from '../../../const/Constant'
 import Swal from 'sweetalert2'
 
 const ViewMember = () => {
+    const { REACT_APP_JSON_SERVER } = process.env
     let history = useHistory()
     const { id } = useParams()
     const [member, setMember] = useState({})
 
     const { response, loading, error } = useAxios({
         method: 'get',
-        url: `${JSON_SERVER}/members/${id}`,
+        url: `${REACT_APP_JSON_SERVER}/members/${id}`,
     })
 
     useEffect(() => {
