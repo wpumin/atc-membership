@@ -21,13 +21,13 @@ ATC Membership is a beta platform which use to keep contact in Advance Technolog
 
 ## The way to see Prototyping, Live Demo, and result of survey
 
-| No  | Description                           | URL                                | Note               |
-| :-: | ------------------------------------- | ---------------------------------- | ------------------ |
-|  1  | Prototyping                           | https://bit.ly/2ZGiI8c             | -                  |
-|  2  | Live Demo                             | https://atc-membership.netlify.app | -                  |
-|  3  | Accessibility score from Lighthouse   | https://bit.ly/3nKulUb             | -                  |
-|  4  | User Experience survey from HotJar #1 | https://bit.ly/3jWAbkd             | Scrolling Behavior |
-|  5  | User Experience survey from HotJar #2 | https://bit.ly/2ZHD4hp             | Screen Recording   |
+| No  | Description                           | URL                                  | Note               |
+| :-: | ------------------------------------- | ------------------------------------ | ------------------ |
+|  1  | Prototyping                           | https://bit.ly/2ZGiI8c               | -                  |
+|  2  | Live Demo                             | https://atc-membership.herokuapp.com | -                  |
+|  3  | Accessibility score from Lighthouse   | https://bit.ly/3nKulUb               | -                  |
+|  4  | User Experience survey from HotJar #1 | https://bit.ly/3jWAbkd               | Scrolling Behavior |
+|  5  | User Experience survey from HotJar #2 | https://bit.ly/2ZHD4hp               | Screen Recording   |
 
 ## Setting up live server in local
 
