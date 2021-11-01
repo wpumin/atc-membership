@@ -34,7 +34,7 @@ const fieldList = [
     },
 ]
 
-const AddMember = () => {
+const MemberForm = () => {
     let history = useHistory()
     let match = useRouteMatch()
     const { id } = match.params
@@ -54,7 +54,7 @@ const AddMember = () => {
             Swal.fire({
                 position: 'center',
                 icon: 'success',
-                text: 'Your membership has been saved',
+                text: 'Your member has been saved',
                 showConfirmButton: false,
                 timer: 2000,
             })
@@ -70,7 +70,7 @@ const AddMember = () => {
                         position: 'center',
                         icon: 'success',
                         title: 'Added!',
-                        text: 'Your membership has been saved',
+                        text: 'Your member has been saved',
                         showConfirmButton: false,
                         timer: 2000,
                     })
@@ -139,7 +139,7 @@ const AddMember = () => {
                             position: 'center',
                             icon: 'warning',
                             title: 'Not found!',
-                            text: 'Your membership has been not found',
+                            text: 'Your member has been not found',
                             showConfirmButton: false,
                             timer: 2000,
                         })
@@ -313,4 +313,4 @@ const AddMember = () => {
     )
 }
 
-export default AddMember
+export default MemberForm

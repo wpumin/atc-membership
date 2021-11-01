@@ -29,7 +29,7 @@ const ViewMember = () => {
                     position: 'center',
                     icon: 'warning',
                     title: 'Not found!',
-                    text: 'Your membership has been not found',
+                    text: 'Your member has been not found',
                     showConfirmButton: false,
                     timer: 2000,
                 })

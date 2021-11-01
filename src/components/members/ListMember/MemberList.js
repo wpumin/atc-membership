@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import axios from 'axios'
 import ActionButtons from './ActionButtons'
 import { JSON_SERVER } from '../../../const/Constant'
@@ -10,6 +10,7 @@ import RemoveButton from '../../../images/remove.svg'
 import EditButton from '../../../images/edit.svg'
 import WatchlistButton from '../../../images/watchlist.svg'
 import ViewButton from '../../../images/view.svg'
+import LoadingIcon from '../../../images/loading_purple.svg'
 
 const MemberList = (props) => {
     const members = props.data
@@ -58,10 +59,22 @@ const MemberList = (props) => {
             .put(`${JSON_SERVER}/members/${presentMember.id}`, presentMember)
             .then(() => {
                 console.log('wathlist toggle!')
-                props.loadMembers()
+                Swal.fire({
+                    position: 'center',
+                    icon: 'success',
+                    title: `Updating watchlist success!`,
+                    text: `${presentMember.name} was ${
+                        presentMember.watchlist === false ? 'removed' : 'added'
+                    } in watchlisted`,
+                    showConfirmButton: false,
+                    timer: 3000,
+                })
             })
             .catch((err) => {
                 console.log(err)
+            })
+            .finally(() => {
+                props.loadMembers()
             })
     }
 
@@ -72,6 +85,16 @@ const MemberList = (props) => {
         },
         buttonsStyling: false,
     })
+
+    const WatchlistLoading = () => {
+        return (
+            <img
+                src={LoadingIcon}
+                className="loading-icon"
+                alt="loading icon"
+            />
+        )
+    }
 
     const NormalList = () => {
         return (

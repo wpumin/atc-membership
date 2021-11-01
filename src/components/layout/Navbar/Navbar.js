@@ -9,7 +9,7 @@ import FontSizeContext from '../../../context/fontSizeContext'
 
 const Navbar = () => {
     const location = useLocation()
-    const brandName = 'ATC Mebmership'
+    const brandName = 'ATC Membership'
     const homePath = location.pathname === `${PATH}`
     const addMemberPath = location.pathname === `${PATH}/add`
     const watchlistPath = location.pathname === `${PATH}/watchlist`
