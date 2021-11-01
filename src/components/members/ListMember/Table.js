@@ -53,7 +53,7 @@ const Table = () => {
                         Swal.fire({
                             position: 'center',
                             icon: 'warning',
-                            text: 'Not found your membership',
+                            text: 'Not found your member',
                             showConfirmButton: false,
                             timer: 2000,
                         })
@@ -71,7 +71,7 @@ const Table = () => {
                         Swal.fire({
                             position: 'center',
                             icon: 'warning',
-                            text: 'Not found your membership',
+                            text: 'Not found your member',
                             showConfirmButton: false,
                             timer: 2000,
                         })
