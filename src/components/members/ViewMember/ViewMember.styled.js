@@ -1,16 +1,6 @@
 import styled from 'styled-components'
 
 export const StyledViewMember = styled.div`
-    h2 {
-        color: ${({ theme }) => theme.primaryDark};
-        font-family: Roboto Bold;
-        font-size: clamp(24px, 75%, 36px);
-        background: ${({ theme }) => theme.primaryOpacity};
-        padding: 0.5rem 0.5rem 0.5rem 1rem;
-        border-left: 7.5px solid ${({ theme }) => theme.primaryDark};
-        margin-bottom: 1rem;
-    }
-
     ul {
         border: 1px solid ${({ theme }) => theme.lightGray};
     }

@@ -7,6 +7,7 @@ export const GlobalStyles = createGlobalStyle`
   html, body {
     margin: 0;
     padding: 0;
+    font-size: 16px;
   }
 
   *, *::after, *::before {
@@ -23,6 +24,7 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.black};
     text-rendering: optimizeLegibility;
     font-family: Roboto Regular, Arial, sans-serif;
+    transition: 0.3s all;
   }
 
   * {
@@ -63,9 +65,10 @@ export const GlobalStyles = createGlobalStyle`
       padding: 0;
   }
 
-  //! Override button style
+  //! Override button and form style
 
   .btn{
+      font-size: 1.125em;
     text-transform: uppercase;
     font-family: Roboto Bold;
   }
@@ -118,6 +121,10 @@ export const GlobalStyles = createGlobalStyle`
       cursor: not-allowed;
   }
 
+  .form-control {
+    font-size: 1.125em;
+  }
+
   //! Override form style
 
   .form-control:focus {
@@ -153,7 +160,7 @@ export const GlobalStyles = createGlobalStyle`
   //! Override small style
 
   small{
-      font-size: clamp(14px, 75%, 18px)
+      font-size: clamp(0.75rem, 75%, 0.875rem);
   }
 
   //! Override SweetAler2
@@ -205,8 +212,8 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   .swal2-title {
-      font-size: clamp(23px, 75%, 28px) !important;
-  }
+    font-size: clamp(23px, 75%, 28px) !important;
+}
 
   .swal2-html-container{
     font-size: clamp(16px, 75%, 18px) !important;

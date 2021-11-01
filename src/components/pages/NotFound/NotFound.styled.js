@@ -87,4 +87,8 @@ export const StyledNotFound = styled.div`
     img.not-found__arrow {
         filter: invert(18%) brightness(55%);
     }
+
+    .not-found span {
+        font-size: 1.5em;
+    }
 `

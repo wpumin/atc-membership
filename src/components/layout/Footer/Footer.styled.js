@@ -12,6 +12,7 @@ export const StyledFooter = styled.footer`
         width: 100%;
         color: ${({ theme }) => theme.white};
         word-wrap: break-word;
+        font-size: clamp(0.75em, 75%, 0.875em);
     }
 
     small span {
@@ -36,5 +37,5 @@ export const StyledFooter = styled.footer`
 
 export const StyledFooterHr = styled.hr`
     width: 80%;
-    border-top: 1px solid ${({ theme }) => theme.whiteOpacity};
+    border-top: 1px solid ${({ theme }) => theme.whiteOpacity25};
 `

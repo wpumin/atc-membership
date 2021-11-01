@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const StyledHighlight = styled.h2`
     font-family: Roboto Bold;
-    font-size: clamp(24px, 75%, 36px);
+    font-size: 1.625em;
     padding: 0.5rem 0.5rem 0.5rem 1rem;
     margin-bottom: 1rem;
 

@@ -58,6 +58,6 @@ export const StyledMemberForm = styled.div`
     }
 
     .text-danger {
-        font-size: clamp(15px, 80%, 20px);
+        font-size: 0.875em;
     }
 `

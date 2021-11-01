@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react'
+import React, { Suspense, useState } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { PATH } from './const/Constant'
 
@@ -12,6 +12,9 @@ import Footer from './components/layout/Footer'
 import MainWrapper from './components/layout/MainWrapper'
 import Loading from './components/UI/Loading'
 
+// Dynamic Font Size
+import FontSizeContext from './context/fontSizeContext'
+
 // LazyLoad Component
 const FirstTime = React.lazy(() => import('./components/pages/FirstTime'))
 const NotFound = React.lazy(() => import('./components/pages/NotFound'))
@@ -20,39 +23,46 @@ const MemberForm = React.lazy(() => import('./components/members/MemberForm'))
 const ViewMember = React.lazy(() => import('./components/members/ViewMember'))
 
 const App = () => {
+    const initialState = localStorage.getItem('fontSize')
+        ? localStorage.getItem('fontSize')
+        : 16
+    const [fontSize, setFontSize] = useState(initialState)
+
     return (
         <Router>
-            <Navbar />
-            <MainWrapper>
-                <Suspense fallback={<Loading />}>
-                    <Switch>
-                        <Route exact path="/" component={FirstTime} />
-                        <Route exact path={PATH} component={ListMember} />
-                        <Route
-                            exact
-                            path={`${PATH}/add`}
-                            component={MemberForm}
-                        />
-                        <Route
-                            exact
-                            path={`${PATH}/view/:id`}
-                            component={ViewMember}
-                        />
-                        <Route
-                            exact
-                            path={`${PATH}/edit/:id`}
-                            component={MemberForm}
-                        />
-                        <Route
-                            exact
-                            path={`${PATH}/watchlist`}
-                            component={ListMember}
-                        />
-                        <Route path="*" component={NotFound} />
-                    </Switch>
-                </Suspense>
-            </MainWrapper>
-            <Footer />
+            <FontSizeContext.Provider value={{ fontSize, setFontSize }}>
+                <Navbar />
+                <MainWrapper>
+                    <Suspense fallback={<Loading />}>
+                        <Switch>
+                            <Route exact path="/" component={FirstTime} />
+                            <Route exact path={PATH} component={ListMember} />
+                            <Route
+                                exact
+                                path={`${PATH}/add`}
+                                component={MemberForm}
+                            />
+                            <Route
+                                exact
+                                path={`${PATH}/view/:id`}
+                                component={ViewMember}
+                            />
+                            <Route
+                                exact
+                                path={`${PATH}/edit/:id`}
+                                component={MemberForm}
+                            />
+                            <Route
+                                exact
+                                path={`${PATH}/watchlist`}
+                                component={ListMember}
+                            />
+                            <Route path="*" component={NotFound} />
+                        </Switch>
+                    </Suspense>
+                </MainWrapper>
+                <Footer />
+            </FontSizeContext.Provider>
         </Router>
     )
 }

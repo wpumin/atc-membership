@@ -98,7 +98,7 @@ export const StyledNavbar = styled.nav`
 
     .nav-link {
         font-family: Roboto Medium;
-        font-size: clamp(18px, 75%, 20px);
+        font-size: 1.125em;
     }
 
     @media only screen and (max-width: 992px) {
@@ -140,5 +140,55 @@ export const StyledNavbar = styled.nav`
     .navbar-brand {
         font-size: clamp(22px, 75%, 26px);
         font-family: Roboto Bold;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .font-resize {
+            border-top: 1px solid ${({ theme }) => theme.whiteOpacity25} !important;
+            width: 100%;
+            margin-top: 1rem;
+            padding-top: 0.5rem;
+        }
+        .font-resize *:not(:last-child) {
+            margin-right: 1rem !important;
+        }
+    }
+
+    .font-resize {
+        cursor: pointer;
+        align-self: center;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: center;
+    }
+
+    .font-resize > .label {
+        color: ${({ theme }) => theme.white} !important;
+    }
+
+    .font-resize > * {
+        color: ${({ theme }) => theme.whiteOpacity50};
+    }
+
+    .font-resize > *:hover,
+    *.active {
+        color: ${({ theme }) => theme.white};
+    }
+
+    .font-resize *:not(:last-child) {
+        margin-right: 0.35rem;
+    }
+
+    .font-resize > .small {
+        font-size: clamp(0.75em, 75%, 0.875em);
+    }
+
+    .font-resize > .medium {
+        font-size: clamp(1em, 75%, 1.25em);
+    }
+
+    .font-resize > .large {
+        font-size: clamp(1.375em, 75%, 1.5em);
     }
 `
