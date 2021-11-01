@@ -1,6 +1,6 @@
 {
     "short_name": "ATC Membership",
-    "name": "ATC Membership (Beta version for Thai users)",
+    "name": "Beta version for Thai users",
     "icons": [
         {
             "src": "favicon.ico",
@@ -20,6 +20,6 @@
     ],
     "start_url": ".",
     "display": "standalone",
-    "theme_color": "#000000",
-    "background_color": "#FFB442"
+    "theme_color": "#8B03CB",
+    "background_color": "#F0D1FF"
 }
