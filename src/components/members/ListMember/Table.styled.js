@@ -88,7 +88,7 @@ export const StyledTable = styled.div`
 
     .form-inline button img {
         margin-left: 0.25rem;
-        width: 22px;
+        width: 24px;
         height: 100%;
     }
 
