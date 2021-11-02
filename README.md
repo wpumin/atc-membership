@@ -2,7 +2,7 @@
 
 [![Build Status](https://img.shields.io/badge/Build-Passed-success)](https://atc-membership.herokuapp.com)
 [![License](https://img.shields.io/badge/License-ATCT-blueviolet)](https://www.accenture.com/th-en/about/company/atc-thailand)
-[![Version](https://img.shields.io/badge/Version-1.1.1-critical)](https://github.com/wpumin/atc-membership/archive/refs/heads/master.zip)
+[![Version](https://img.shields.io/badge/Version-1.1.2-critical)](https://github.com/wpumin/atc-membership/archive/refs/heads/master.zip)
 [![Live Demo Server](https://img.shields.io/badge/Live%20Demo%20Server%20-Heroku-violet)](https://atc-membership.herokuapp.com)
 
 &nbsp;
@@ -90,5 +90,5 @@ _Inspect the behavior of users when he/she use my platform_
 |  4  | User Experience survey from HotJar #1 | https://bit.ly/3jWAbkd               | Scrolling Behavior |
 |  5  | User Experience survey from HotJar #2 | https://bit.ly/2ZHD4hp               | Screen Recording   |
 
-> Version: 1.1.1
-> Last update: 11/02/2021 17:45 GMT+7
+> Version: 1.1.2
+> Last update: 11/02/2021 22:45 GMT+7

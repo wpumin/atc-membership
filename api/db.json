@@ -1,147 +1,147 @@
 {
-    "members": [
-        {
-            "name": "Nitinant Somboonvit",
-            "department": "Technology Delivery Lead",
-            "role": "Sr Technology Delivery Lead Executive",
-            "email": "nitinant.somboonvit@accenture.com",
-            "tel": "+66 80 908 0368",
-            "location": "Bangkok Abdulrahim Place",
-            "comment": "Nitinant is a senior manager from Communication and High-Tech Operating Group based in Bangkok Thailand. She has been worked in both business and system integration consulting. Her areas of expertise include CRM, PRM (partner relationship management), and Marketing Campaign Management.",
-            "watchlist": true,
-            "id": 1
-        },
-        {
-            "id": 2,
-            "name": "Korrakot Triwichian",
-            "department": "Application Development",
-            "role": "Application Development Associate",
-            "email": "korrakot.triwichian@accenture.com",
-            "tel": "+66 89 125 1561",
-            "location": "Bangkok Abdulrahim Place",
-            "comment": "I'm a Web Developer. I mostly use different JavaScript Frameworks for both front end and back end development. I've had experience creating and deploying my own applications and APIs.\n\nMore than just being a Web Developer, I've also had experience working with machine learning frameworks from scratch to deployment.\n\nMost of my work experiences has made me quite flexible in developing digital solutions as needed from me.",
-            "watchlist": true
-        },
-        {
-            "id": 3,
-            "name": "Kawin Arwon",
-            "department": "Application Development",
-            "role": "Application Development Senior Analyst",
-            "email": "kawin.arwon@accenture.com",
-            "tel": "+66 62 475 1236",
-            "location": "Bangkok Abdulrahim Place",
-            "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
-            "watchlist": true
-        },
-        {
-            "id": 4,
-            "name": "Soravis Toey Chaiyanan",
-            "department": "Business & Integration Architecture",
-            "role": "Business & Integration Arch Manager",
-            "email": "soravis.chaiyanan@accenture.com",
-            "tel": "+66 2 686 7593",
-            "location": "Bangkok Abdulrahim Place",
-            "comment": "Graduate of Bachelor of Science in Computer Science.- With over 22 years of overall work experience as Programmer/Business Analyst/Systems Analyst/Team Lead/Project Manager/Delivery Lead/Capability Lead. - With experience in different phases of the software development lifecycle which include business study, requirements gathering, prototyping, analysis, build/code, test, and support phases.",
-            "watchlist": false
-        },
-        {
-            "id": 5,
-            "name": "Jeep Jangprasert",
-            "department": "HR Partner",
-            "role": "HR Partner Specialist",
-            "email": "j.jangprasert@accenture.com",
-            "tel": "+66 62 535 3659",
-            "location": "Bangkok Abdulrahim Place",
-            "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
-            "watchlist": false
-        },
-        {
-            "id": 6,
-            "name": "Siranya Larksukthom",
-            "department": "HR Partner",
-            "role": "HR Partner Senior Analyst",
-            "email": "siranya.larksukthom@accenture.com",
-            "tel": "+66 2 686 7444",
-            "location": "Bangkok Abdulrahim Place",
-            "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
-            "watchlist": true
-        },
-        {
-            "id": 7,
-            "name": "Kulladech Pitakpornkasem",
-            "department": "Application Development",
-            "role": "Application Development Associate",
-            "email": "k.pitakpornkasem@accenture.com",
-            "tel": "+66 87 589 7211",
-            "location": "Bangkok Abdulrahim Place",
-            "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
-            "watchlist": true
-        },
-        {
-            "id": 8,
-            "name": "Pachara Bunmalert",
-            "department": "Application Development",
-            "role": "Application Development Associate",
-            "email": "pachara.bunmalert@accenture.com",
-            "tel": "+66 87 17 1717",
-            "location": "Bangkok Abdulrahim Place",
-            "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
-            "watchlist": true
-        },
-        {
-            "id": 9,
-            "name": "Khongchai Greesuradej",
-            "department": "Application Development",
-            "role": "Application Development Analyst",
-            "email": "k.greesuradej@accenture.com",
-            "tel": "+66 2 475 1124",
-            "location": "Bangkok Abdulrahim Place",
-            "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
-            "watchlist": true
-        },
-        {
-            "id": 10,
-            "name": "Pumin Wongsiri",
-            "department": "Application Development",
-            "role": "Application Development Assosiate",
-            "email": "pumin.wongsiri@accenture.com",
-            "tel": "+66 2 475 1123",
-            "location": "Bangkok Abdulrahim Place",
-            "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
-            "watchlist": true
-        },
-        {
-            "id": 11,
-            "name": "Sarinee Sassanakul",
-            "department": "Application Development",
-            "role": "Application Development Assosiate",
-            "email": "sarinee.sassanakul@accenture.com",
-            "tel": "+66 2 475 1125",
-            "location": "Bangkok Abdulrahim Place",
-            "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
-            "watchlist": false
-        },
-        {
-            "id": 12,
-            "name": "Puttipong Thammachart",
-            "department": "Application Development",
-            "role": "Application Development Analyst",
-            "email": "p.thammachart@accenture.com",
-            "tel": "+66 2 475 1129",
-            "location": "Bangkok Abdulrahim Place",
-            "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
-            "watchlist": true
-        },
-        {
-            "name": "Siriluk Boonplood",
-            "department": "Administrator",
-            "role": "Administrator Analyst",
-            "email": "SirilukDummy@gmail.com",
-            "tel": "+66 89 507 2549",
-            "location": "Bangkok Abdulrahim Place",
-            "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-            "id": 13,
-            "watchlist": false
-        }
-    ]
+  "members": [
+    {
+      "name": "Nitinant Somboonvit",
+      "department": "Technology Delivery Lead",
+      "role": "Sr Technology Delivery Lead Executive",
+      "email": "nitinant.somboonvit@accenture.com",
+      "tel": "+66 80 908 0368",
+      "location": "Bangkok Abdulrahim Place",
+      "comment": "Nitinant is a senior manager from Communication and High-Tech Operating Group based in Bangkok Thailand. She has been worked in both business and system integration consulting. Her areas of expertise include CRM, PRM (partner relationship management), and Marketing Campaign Management.",
+      "watchlist": true,
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Korrakot Triwichian",
+      "department": "Application Development",
+      "role": "Application Development Associate",
+      "email": "korrakot.triwichian@accenture.com",
+      "tel": "+66 89 125 1561",
+      "location": "Bangkok Abdulrahim Place",
+      "comment": "I'm a Web Developer. I mostly use different JavaScript Frameworks for both front end and back end development. I've had experience creating and deploying my own applications and APIs.\n\nMore than just being a Web Developer, I've also had experience working with machine learning frameworks from scratch to deployment.\n\nMost of my work experiences has made me quite flexible in developing digital solutions as needed from me.",
+      "watchlist": true
+    },
+    {
+      "id": 3,
+      "name": "Kawin Arwon",
+      "department": "Application Development",
+      "role": "Application Development Senior Analyst",
+      "email": "kawin.arwon@accenture.com",
+      "tel": "+66 62 475 1236",
+      "location": "Bangkok Abdulrahim Place",
+      "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+      "watchlist": true
+    },
+    {
+      "id": 4,
+      "name": "Soravis Toey Chaiyanan",
+      "department": "Business & Integration Architecture",
+      "role": "Business & Integration Arch Manager",
+      "email": "soravis.chaiyanan@accenture.com",
+      "tel": "+66 2 686 7593",
+      "location": "Bangkok Abdulrahim Place",
+      "comment": "Graduate of Bachelor of Science in Computer Science.- With over 22 years of overall work experience as Programmer/Business Analyst/Systems Analyst/Team Lead/Project Manager/Delivery Lead/Capability Lead. - With experience in different phases of the software development lifecycle which include business study, requirements gathering, prototyping, analysis, build/code, test, and support phases.",
+      "watchlist": false
+    },
+    {
+      "id": 5,
+      "name": "Jeep Jangprasert",
+      "department": "HR Partner",
+      "role": "HR Partner Specialist",
+      "email": "j.jangprasert@accenture.com",
+      "tel": "+66 62 535 3659",
+      "location": "Bangkok Abdulrahim Place",
+      "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+      "watchlist": false
+    },
+    {
+      "id": 6,
+      "name": "Siranya Larksukthom",
+      "department": "HR Partner",
+      "role": "HR Partner Senior Analyst",
+      "email": "siranya.larksukthom@accenture.com",
+      "tel": "+66 2 686 7444",
+      "location": "Bangkok Abdulrahim Place",
+      "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+      "watchlist": true
+    },
+    {
+      "id": 7,
+      "name": "Kulladech Pitakpornkasem",
+      "department": "Application Development",
+      "role": "Application Development Associate",
+      "email": "k.pitakpornkasem@accenture.com",
+      "tel": "+66 87 589 7211",
+      "location": "Bangkok Abdulrahim Place",
+      "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+      "watchlist": true
+    },
+    {
+      "id": 8,
+      "name": "Pachara Bunmalert",
+      "department": "Application Development",
+      "role": "Application Development Associate",
+      "email": "pachara.bunmalert@accenture.com",
+      "tel": "+66 87 17 1717",
+      "location": "Bangkok Abdulrahim Place",
+      "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+      "watchlist": true
+    },
+    {
+      "id": 9,
+      "name": "Khongchai Greesuradej",
+      "department": "Application Development",
+      "role": "Application Development Analyst",
+      "email": "k.greesuradej@accenture.com",
+      "tel": "+66 2 475 1124",
+      "location": "Bangkok Abdulrahim Place",
+      "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+      "watchlist": true
+    },
+    {
+      "id": 10,
+      "name": "Pumin Wongsiri",
+      "department": "Application Development",
+      "role": "Application Development Assosiate",
+      "email": "pumin.wongsiri@accenture.com",
+      "tel": "+66 2 475 1123",
+      "location": "Bangkok Abdulrahim Place",
+      "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+      "watchlist": true
+    },
+    {
+      "id": 11,
+      "name": "Sarinee Sassanakul",
+      "department": "Application Development",
+      "role": "Application Development Assosiate",
+      "email": "sarinee.sassanakul@accenture.com",
+      "tel": "+66 2 475 1125",
+      "location": "Bangkok Abdulrahim Place",
+      "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+      "watchlist": false
+    },
+    {
+      "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
+      "location": "Bangkok Abdulrahim Place",
+      "tel": "+66 2 475 1129",
+      "email": "p.thammachart@accenture.com",
+      "role": "Application Development Analyst",
+      "department": "Application Development",
+      "name": "Puttipong Thammachart",
+      "watchlist": true,
+      "id": 12
+    },
+    {
+      "name": "Siriluk Boonplood",
+      "department": "Administrator",
+      "role": "Administrator Analyst",
+      "email": "SirilukDummy@gmail.com",
+      "tel": "+66 89 507 2549",
+      "location": "Bangkok Abdulrahim Place",
+      "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "id": 13,
+      "watchlist": false
+    }
+  ]
 }

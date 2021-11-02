@@ -43,27 +43,25 @@ const Navbar = () => {
 
     const { fontSize, setFontSize } = useContext(FontSizeContext)
 
+    const onChangeFontSize = (currentFontSize) => {
+        document.body.style.fontSize = `${currentFontSize}px`
+        localStorage.setItem('fontSizeFromContext', currentFontSize)
+        setFontSize(currentFontSize)
+    }
+
     const fontSizeHandler = (size) => {
         switch (size) {
             case 'small':
-                document.body.style.fontSize = `14px`
-                localStorage.setItem('fontSize', 14)
-                setFontSize(14)
+                onChangeFontSize(14)
                 break
             case 'medium':
-                document.body.style.fontSize = `16px`
-                localStorage.setItem('fontSize', 16)
-                setFontSize(16)
+                onChangeFontSize(16)
                 break
             case 'large':
-                document.body.style.fontSize = `18px`
-                localStorage.setItem('fontSize', 18)
-                setFontSize(18)
+                onChangeFontSize(18)
                 break
             default:
-                document.body.style.fontSize = `16px`
-                localStorage.setItem('fontSize', 16)
-                setFontSize(16)
+                onChangeFontSize(16)
                 break
         }
     }
