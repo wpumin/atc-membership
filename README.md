@@ -18,10 +18,10 @@ ATC Membership is a beta platform which use to keep contact in Advance Technolog
 | :-: | -------------------------------- | :-----: | ----------------------- |
 |  1  | See all members within the table | &check; | Mandatory Functionality |
 |  2  | CRUD members                     | &check; | Mandatory Functionality |
-|  3  | See member' detail               | &check; | Mandatory Functionality |
+|  3  | See member's detail              | &check; | Mandatory Functionality |
 |  4  | Routing                          | &check; | Mandatory Functionality |
 |  5  | Page Not Found                   | &check; | Mandatory Functionality |
-|  6  | Form Validation                  | &check; | Mandatory Functionality |
+|  6  | Form validation                  | &check; | Mandatory Functionality |
 |  7  | Support visually challenged      | &check; | Mandatory Functionality |
 |  8  | Dynamic font resizing for aged   | &check; | Optional Functionality  |
 |  9  | Watchlist                        | &check; | Optional Functionality  |
