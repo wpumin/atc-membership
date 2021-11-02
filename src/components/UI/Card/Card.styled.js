@@ -9,7 +9,8 @@ export const StyledCard = styled.div`
         border-radius: ${({ theme }) => theme.carBorderRadius};
         box-shadow: ${({ theme }) => theme.boxShadow};
         color: ${({ theme }) => theme.primary};
-        height: 600px;
+        min-height: 600px;
+        height: auto;
         overflow-y: overlay;
         overflow-x: hidden;
 
