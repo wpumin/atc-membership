@@ -16,3 +16,44 @@ export const MENUS = [
         path: '/watchlist',
     },
 ]
+
+// FONT SIZE
+export const FONT_SIZE = [
+    {
+        sizeLabel: 'small',
+        size: 14,
+    },
+    {
+        sizeLabel: 'medium',
+        size: 16,
+    },
+    {
+        sizeLabel: 'large',
+        size: 18,
+    },
+]
+
+// FIELDS IN FORM
+export const FIELDS_IN_FORM = [
+    {
+        name: 'name',
+    },
+    {
+        name: 'department',
+    },
+    {
+        name: 'role',
+    },
+    {
+        name: 'email',
+    },
+    {
+        name: 'tel',
+    },
+    {
+        name: 'location',
+    },
+    {
+        name: 'comment',
+    },
+]

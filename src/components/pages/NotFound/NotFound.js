@@ -1,9 +1,9 @@
 import React from 'react'
 import { StyledNotFound } from './NotFound.styled'
+import { PATH, MENUS } from '../../../const/Constant'
 import { Link } from 'react-router-dom'
 import NotFoundImage from '../../../images/404.png'
 import ArrowImage from '../../../images/arrow.svg'
-import { PATH, MENUS } from '../../../const/Constant'
 
 const pageContent =
     'We are sorry but the page you are looking for does not exist. Please select a page from the site navigation or follow one of the links below.'
@@ -15,6 +15,7 @@ const NotFound = () => {
                 <img
                     src={NotFoundImage}
                     alt="404 —  page not found"
+                    aria-label="404 —  page not found"
                     className="not-found__image"
                 />
                 <div className="not-found__content">

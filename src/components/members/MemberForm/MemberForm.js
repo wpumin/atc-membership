@@ -1,43 +1,20 @@
 import React, { useState, useEffect } from 'react'
-import { useForm } from 'react-hook-form'
-import { yupResolver } from '@hookform/resolvers/yup'
-import Schema from './Schema'
-import { StyledMemberForm } from './MemberForm.styled'
 import axios from 'axios'
+import { useForm } from 'react-hook-form'
 import { useHistory, useRouteMatch, Prompt } from 'react-router-dom'
-import Highlight from '../../UI/Highlight'
+import { yupResolver } from '@hookform/resolvers/yup'
+import { StyledMemberForm } from './MemberForm.styled'
 import { PATH } from '../../../const/Constant'
+import Schema from './Schema'
+import Highlight from '../../UI/Highlight'
 import Swal from 'sweetalert2'
-
-const fieldList = [
-    {
-        name: 'name',
-    },
-    {
-        name: 'department',
-    },
-    {
-        name: 'role',
-    },
-    {
-        name: 'email',
-    },
-    {
-        name: 'tel',
-    },
-    {
-        name: 'location',
-    },
-    {
-        name: 'comment',
-    },
-]
+import { FIELDS_IN_FORM } from '../../../const/Constant'
 
 const MemberForm = () => {
     const { REACT_APP_JSON_SERVER } = process.env
-    let history = useHistory()
-    let match = useRouteMatch()
+    const match = useRouteMatch()
     const { id } = match.params
+    let history = useHistory()
 
     const {
         register,
@@ -47,6 +24,23 @@ const MemberForm = () => {
     } = useForm({
         resolver: yupResolver(Schema),
     })
+
+    const initialValue = {
+        id: '',
+        name: '',
+        department: '',
+        role: '',
+        email: '',
+        tel: '',
+        location: '',
+        comment: '',
+        watchlist: false,
+    }
+
+    // initial data of obj
+    const [member, setMember] = useState(initialValue)
+
+    const [isEntering, setIsEntering] = useState(false)
 
     const onSubmit = async (data) => {
         if (id) {
@@ -58,6 +52,7 @@ const MemberForm = () => {
                 showConfirmButton: false,
                 timer: 2000,
             })
+            console.log('member edited!')
             setTimeout(() => {
                 history.push(PATH)
             }, 2150)
@@ -86,23 +81,6 @@ const MemberForm = () => {
                 })
         }
     }
-
-    const initialValue = {
-        id: '',
-        name: '',
-        department: '',
-        role: '',
-        email: '',
-        tel: '',
-        location: '',
-        comment: '',
-        watchlist: false,
-    }
-
-    // initial data of obj
-    const [member, setMember] = useState(initialValue)
-
-    const [isEntering, setIsEntering] = useState(false)
 
     const loadMembers = async () => {
         await axios
@@ -135,6 +113,7 @@ const MemberForm = () => {
                         }
                     })
                     .catch((err) => {
+                        console.log(err)
                         Swal.fire({
                             position: 'center',
                             icon: 'warning',
@@ -183,13 +162,13 @@ const MemberForm = () => {
     const TEL_ERROR = errors.tel?.message
     const LOCATION_ERROR = errors.location?.message
 
-    const classInvalid = 'invalid'
-    const nameClasses = NAME_ERROR ? classInvalid : ''
-    const departmentClasses = DEPARTMENT_ERROR ? classInvalid : ''
-    const roleClasses = ROLE_ERROR ? classInvalid : ''
-    const emailClasses = EMAIL_ERROR ? classInvalid : ''
-    const telClasses = TEL_ERROR ? classInvalid : ''
-    const locationClasses = LOCATION_ERROR ? classInvalid : ''
+    const invalidClass = 'invalid'
+    const nameClasses = NAME_ERROR ? invalidClass : ''
+    const departmentClasses = DEPARTMENT_ERROR ? invalidClass : ''
+    const roleClasses = ROLE_ERROR ? invalidClass : ''
+    const emailClasses = EMAIL_ERROR ? invalidClass : ''
+    const telClasses = TEL_ERROR ? invalidClass : ''
+    const locationClasses = LOCATION_ERROR ? invalidClass : ''
 
     return (
         <StyledMemberForm role="form">
@@ -206,9 +185,8 @@ const MemberForm = () => {
             )}
             <form onFocus={fromFocusHandler} onSubmit={handleSubmit(onSubmit)}>
                 <div className="row">
-                    {fieldList
-                        .slice(0, fieldList.length - 1)
-                        .map((field, index) => (
+                    {FIELDS_IN_FORM.slice(0, FIELDS_IN_FORM.length - 1).map(
+                        (field, index) => (
                             <div
                                 className="from-group col-12 col-md-6 mb-0 mb-md-2"
                                 key={index}
@@ -242,9 +220,6 @@ const MemberForm = () => {
                                             : field.name
                                     }`}
                                     {...register(field.name)}
-                                    onPaste="return false"
-                                    onCopy="return false"
-                                    onCut="return false"
                                 />
                                 <small
                                     id="nameValidator"
@@ -260,13 +235,14 @@ const MemberForm = () => {
                                         LOCATION_ERROR}
                                 </small>
                             </div>
-                        ))}
+                        )
+                    )}
                     <div className="form-group col">
                         <label htmlFor="comment">
                             Comment <span className="text-danger">*</span>
                         </label>
                         <textarea
-                            tabIndex={fieldList.length + 1}
+                            tabIndex={FIELDS_IN_FORM.length + 1}
                             className={`${
                                 errors.comment?.message
                                     ? 'form-control invalid'
@@ -290,7 +266,7 @@ const MemberForm = () => {
                 {id ? (
                     <div className="action-button">
                         <button
-                            tabIndex={fieldList.length + 1}
+                            tabIndex={FIELDS_IN_FORM.length + 2}
                             aria-label="back button"
                             className="btn btn-primary mt-2"
                             onClick={(e) => backHandler(e)}
@@ -298,7 +274,7 @@ const MemberForm = () => {
                             Back
                         </button>
                         <button
-                            tabIndex={fieldList.length + 2}
+                            tabIndex={FIELDS_IN_FORM.length + 3}
                             aria-label="edit button"
                             className="btn btn-secondary mt-2"
                             onClick={finishEnteringHandler}
@@ -308,7 +284,7 @@ const MemberForm = () => {
                     </div>
                 ) : (
                     <button
-                        tabIndex={fieldList.length + 1}
+                        tabIndex={FIELDS_IN_FORM.length + 2}
                         aria-label="add button"
                         onClick={finishEnteringHandler}
                         className="btn btn-primary btn-block mt-2"

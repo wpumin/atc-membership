@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
-
-// svg img
 import ViewButton from '../../../images/close.svg'
 import LoadingIcon from '../../../images/loading_white.svg'
 
@@ -49,7 +47,7 @@ const SearchBar = (props) => {
                     src={ViewButton}
                     alt="close button"
                     className={closeClasses}
-                    onClick={(e) => clearSearch()}
+                    onClick={() => clearSearch()}
                 />
             </div>
             <small>{props.searchValue}</small>

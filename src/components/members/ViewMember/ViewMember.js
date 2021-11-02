@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { useParams, useHistory } from 'react-router-dom'
 import { StyledViewMember } from './ViewMember.styled'
-import Highlight from '../../UI/Highlight'
 import useAxios from '../../../hooks/useAxios'
+import Highlight from '../../UI/Highlight'
 import Loading from '../../UI/Loading'
 import Item from './Item'
 import NotFound from '../../pages/NotFound'
@@ -10,9 +10,9 @@ import Swal from 'sweetalert2'
 
 const ViewMember = () => {
     const { REACT_APP_JSON_SERVER } = process.env
-    let history = useHistory()
     const { id } = useParams()
     const [member, setMember] = useState({})
+    let history = useHistory()
 
     const { response, loading, error } = useAxios({
         method: 'get',
@@ -20,7 +20,7 @@ const ViewMember = () => {
     })
 
     useEffect(() => {
-        const checkHandler = () => {
+        const queryHandler = () => {
             if (response !== null && !error) {
                 setMember(response)
             }
@@ -35,7 +35,7 @@ const ViewMember = () => {
                 })
             }
         }
-        checkHandler()
+        queryHandler()
     })
 
     const backHandler = (e) => {

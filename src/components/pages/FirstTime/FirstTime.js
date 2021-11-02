@@ -2,8 +2,8 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
 import { StyleFirstTime } from './FirstTime.styled'
-import AccentureLogoIcon from '../../../images/accenture.gif'
 import { PATH } from '../../../const/Constant'
+import AccentureLogoIcon from '../../../images/accenture.gif'
 
 const FirstTime = () => {
     const [time, setTime] = useState(5)
@@ -39,6 +39,7 @@ const FirstTime = () => {
                 <img
                     src={AccentureLogoIcon}
                     alt="accenture logo"
+                    aria-label="accenture logo"
                     className="logo-icon"
                 />
                 <span>" Welcome to ATC Membership "</span>

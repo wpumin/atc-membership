@@ -7,6 +7,7 @@ const HamburgerIcon = (props) => {
             className={props.hamburgerClass}
             data-toggle="collapse"
             data-target="#navbarNav"
+            aria-label="burger icon"
             onClick={props.onToggleHandler}
         >
             <span className="burger" />

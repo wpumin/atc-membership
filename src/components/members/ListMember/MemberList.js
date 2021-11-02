@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import axios from 'axios'
-import ActionButtons from './ActionButtons'
 import { PATH } from '../../../const/Constant'
+import ActionButton from './ActionButton'
 import Swal from 'sweetalert2'
 
 // svg img
@@ -12,10 +12,25 @@ import ViewButton from '../../../images/view.svg'
 
 const MemberList = (props) => {
     const { REACT_APP_JSON_SERVER } = process.env
-    const members = props.data
     const pathFromProps = props.pathFromProps
+    const members = props.data
+    const activeClass = 'active'
 
-    const deleteMember = async (id) => {
+    const deleteMemberHandler = async (id) => {
+        const deleteMember = async () => {
+            await axios
+                .delete(`${REACT_APP_JSON_SERVER}/members/${id}`)
+                .then(() => {
+                    console.log('member deleted!')
+                })
+                .catch((err) => {
+                    console.log(err)
+                })
+                .finally(() => {
+                    props.loadMembers()
+                })
+        }
+
         swalWithBootstrapButtons
             .fire({
                 title: 'Are you sure?',
@@ -28,6 +43,7 @@ const MemberList = (props) => {
             })
             .then((result) => {
                 if (result.isConfirmed) {
+                    deleteMember()
                     Swal.fire({
                         position: 'center',
                         icon: 'success',
@@ -35,24 +51,12 @@ const MemberList = (props) => {
                         text: 'Your member has been deleted',
                         showConfirmButton: false,
                         timer: 2000,
-                    }).then(async () => {
-                        await axios
-                            .delete(`${REACT_APP_JSON_SERVER}/members/${id}`)
-                            .then(() => {
-                                console.log('member deleted!')
-                            })
-                            .catch((err) => {
-                                console.log(err)
-                            })
-                            .finally(() => {
-                                props.loadMembers()
-                            })
-                    })
+                    }).then()
                 }
             })
     }
 
-    const onWatchlistChange = async (presentMember) => {
+    const watchlistHandler = async (presentMember) => {
         presentMember.watchlist = !presentMember.watchlist
         await axios
             .put(
@@ -98,29 +102,31 @@ const MemberList = (props) => {
                         <td>{member.email}</td>
                         <td>{member.tel}</td>
                         <td className="action-button center">
-                            <ActionButtons
+                            <ActionButton
                                 type="without-link"
                                 image={RemoveButton}
                                 class="action-button__remove"
                                 alt="remove button"
-                                onClick={() => deleteMember(member.id)}
+                                onClick={() => deleteMemberHandler(member.id)}
                             />
-                            <ActionButtons
+                            <ActionButton
                                 type="with-link"
                                 image={EditButton}
                                 class="action-button__edit"
                                 alt="edit button"
                                 pathFromProps={`${PATH}/edit/${member.id}`}
                             />
-                            <ActionButtons
+                            <ActionButton
                                 type="without-link"
                                 image={WatchlistButton}
                                 class="action-button__watchlist"
-                                activeClass={member.watchlist ? 'active' : ''}
+                                activeClass={
+                                    member.watchlist ? activeClass : ''
+                                }
                                 alt="watchlist button"
-                                onClick={() => onWatchlistChange(member)}
+                                onClick={() => watchlistHandler(member)}
                             />
-                            <ActionButtons
+                            <ActionButton
                                 type="with-link"
                                 image={ViewButton}
                                 class="action-button__view"
@@ -146,33 +152,33 @@ const MemberList = (props) => {
                                 <td>{member.email}</td>
                                 <td>{member.tel}</td>
                                 <td className="action-button center">
-                                    <ActionButtons
+                                    <ActionButton
                                         type="without-link"
                                         image={RemoveButton}
                                         class="action-button__remove"
                                         alt="remove button"
-                                        onClick={() => deleteMember(member.id)}
+                                        onClick={() =>
+                                            deleteMemberHandler(member.id)
+                                        }
                                     />
-                                    <ActionButtons
+                                    <ActionButton
                                         type="with-link"
                                         image={EditButton}
                                         class="action-button__edit"
                                         alt="edit button"
                                         pathFromProps={`${PATH}/edit/${member.id}`}
                                     />
-                                    <ActionButtons
+                                    <ActionButton
                                         type="without-link"
                                         image={WatchlistButton}
                                         class="action-button__watchlist"
                                         activeClass={
-                                            member.watchlist ? 'active' : ''
+                                            member.watchlist ? activeClass : ''
                                         }
                                         alt="watchlist button"
-                                        onClick={() =>
-                                            onWatchlistChange(member)
-                                        }
+                                        onClick={() => watchlistHandler(member)}
                                     />
-                                    <ActionButtons
+                                    <ActionButton
                                         type="with-link"
                                         image={ViewButton}
                                         class="action-button__view"

@@ -1,10 +1,11 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import { StyledNavbar } from './Navbar.styled'
+import { PATH, MENUS, FONT_SIZE } from '../../../const/Constant'
 import Brand from './Brand'
 import HamburgerIcon from './HamburgerIcon'
 import Menu from './Menu'
-import { PATH, MENUS } from '../../../const/Constant'
+import FontResizeingButton from './FontResizeingButton'
 import FontSizeContext from '../../../context/fontSizeContext'
 
 const Navbar = () => {
@@ -109,34 +110,22 @@ const Navbar = () => {
                                 menu={menu.page}
                             />
                         ))}
-                        <li className="font-resize" key={MENUS.length + 1}>
+                        <li className="font-resize" key={MENUS.length}>
                             <button className="d-block d-lg-none label">
                                 Font size:
                             </button>
-                            <button
-                                className={`small ${
-                                    fontSize === 14 && 'active'
-                                }`}
-                                onClick={() => fontSizeHandler('small')}
-                            >
-                                A
-                            </button>{' '}
-                            <button
-                                className={`medium ${
-                                    fontSize === 16 && 'active'
-                                }`}
-                                onClick={() => fontSizeHandler('medium')}
-                            >
-                                A
-                            </button>{' '}
-                            <button
-                                className={`large ${
-                                    fontSize === 18 && 'active'
-                                }`}
-                                onClick={() => fontSizeHandler('large')}
-                            >
-                                A
-                            </button>
+                            {FONT_SIZE.map((fontSizeItem, index) => (
+                                <FontResizeingButton
+                                    key={index}
+                                    class={`${fontSizeItem.sizeLabel} ${
+                                        fontSize === fontSizeItem.size &&
+                                        'active'
+                                    }`}
+                                    onClick={() =>
+                                        fontSizeHandler(fontSizeItem.sizeLabel)
+                                    }
+                                />
+                            ))}
                         </li>
                     </ul>
                 </div>

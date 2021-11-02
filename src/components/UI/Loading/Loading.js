@@ -1,6 +1,6 @@
 import React from 'react'
-import LoadingIcon from '../../../images/loading_purple.svg'
 import { StyleLoading } from './Loading.styled'
+import LoadingIcon from '../../../images/loading_purple.svg'
 
 const Loading = () => {
     return (

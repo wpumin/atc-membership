@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { useRouteMatch } from 'react-router-dom'
 import { StyledTable } from './Table.styled'
+import { PATH } from '../../../const/Constant'
 import SearchBar from '../SearchBar'
 import TableHeader from './TableHeader'
 import MemberList from './MemberList'
 import Loading from '../../UI/Loading'
-import { PATH } from '../../../const/Constant'
 import Swal from 'sweetalert2'
 
 const Table = () => {
@@ -59,9 +59,9 @@ const Table = () => {
                             showConfirmButton: false,
                             timer: 2000,
                         })
-                        console.log('not found')
+                        console.log('not found!')
                     } else {
-                        console.log('search completed')
+                        console.log('search completed!')
                     }
                 }
                 if (match.path === `${PATH}/watchlist`) {
@@ -77,9 +77,9 @@ const Table = () => {
                             showConfirmButton: false,
                             timer: 2000,
                         })
-                        console.log('not found')
+                        console.log('not found!')
                     } else {
-                        console.log('search completed')
+                        console.log('search completed!')
                     }
                 }
             })

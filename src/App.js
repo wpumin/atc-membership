@@ -23,7 +23,6 @@ const MemberForm = React.lazy(() => import('./components/members/MemberForm'))
 const ViewMember = React.lazy(() => import('./components/members/ViewMember'))
 
 const App = () => {
-    console.log(process.env)
     const initialState = localStorage.getItem('fontSize')
         ? localStorage.getItem('fontSize')
         : 16

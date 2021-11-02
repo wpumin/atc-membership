@@ -87,4 +87,4 @@ _Inspect the behavior of users when he/she use my platform_
 |  5  | User Experience survey from HotJar #2 | https://bit.ly/2ZHD4hp               | Screen Recording   |
 
 > Version: 1.1.1
-> Last update: 11/02/2021 18:00 GMT+7
+> Last update: 11/02/2021 15:00 GMT+7
