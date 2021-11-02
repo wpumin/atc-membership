@@ -13,16 +13,19 @@ ATC Membership is a beta platform which use to keep contact in Advance Technolog
 
 ## Key Features
 
-| No  | Functionality               | Status  | Note                    |
-| :-: | --------------------------- | :-----: | ----------------------- |
-|  1  | See all members list        | &check; | Mandatory Functionality |
-|  2  | CRUD members                | &check; | Mandatory Functionality |
-|  3  | Routing                     | &check; | Mandatory Functionality |
-|  4  | Support visually challenged | &check; | Mandatory Functionality |
-|  5  | Dynamic font resizing       | &check; | Optional Functionality  |
-|  6  | Watchlist                   | &check; | Optional Functionality  |
-|  7  | Search members              | &check; | Optional Functionality  |
-|  8  | User experience survey      | &check; | Optional Functionality  |
+| No  | Functionality                  | Status  | Note                    |
+| :-: | ------------------------------ | :-----: | ----------------------- |
+|  1  | See all members list           | &check; | Mandatory Functionality |
+|  2  | CRUD members                   | &check; | Mandatory Functionality |
+|  3  | See member' detail             | &check; | Mandatory Functionality |
+|  4  | Routing                        | &check; | Mandatory Functionality |
+|  5  | Page Not Found                 | &check; | Mandatory Functionality |
+|  6  | Form Validation                | &check; | Mandatory Functionality |
+|  7  | Support visually challenged    | &check; | Mandatory Functionality |
+|  8  | Dynamic font resizing for aged | &check; | Optional Functionality  |
+|  9  | Watchlist                      | &check; | Optional Functionality  |
+| 10  | Search members                 | &check; | Optional Functionality  |
+| 11  | User experience survey         | &check; | Optional Functionality  |
 
 ## Setting up live server in local
 
@@ -87,4 +90,4 @@ _Inspect the behavior of users when he/she use my platform_
 |  5  | User Experience survey from HotJar #2 | https://bit.ly/2ZHD4hp               | Screen Recording   |
 
 > Version: 1.1.1
-> Last update: 11/02/2021 15:00 GMT+7
+> Last update: 11/02/2021 15:30 GMT+7
