@@ -183,12 +183,13 @@ const MemberForm = () => {
     const TEL_ERROR = errors.tel?.message
     const LOCATION_ERROR = errors.location?.message
 
-    const nameClasses = NAME_ERROR ? 'invalid' : ''
-    const departmentClasses = DEPARTMENT_ERROR ? 'invalid' : ''
-    const roleClasses = ROLE_ERROR ? 'invalid' : ''
-    const emailClasses = EMAIL_ERROR ? 'invalid' : ''
-    const telClasses = TEL_ERROR ? 'invalid' : ''
-    const locationClasses = LOCATION_ERROR ? 'invalid' : ''
+    const classInvalid = 'invalid'
+    const nameClasses = NAME_ERROR ? classInvalid : ''
+    const departmentClasses = DEPARTMENT_ERROR ? classInvalid : ''
+    const roleClasses = ROLE_ERROR ? classInvalid : ''
+    const emailClasses = EMAIL_ERROR ? classInvalid : ''
+    const telClasses = TEL_ERROR ? classInvalid : ''
+    const locationClasses = LOCATION_ERROR ? classInvalid : ''
 
     return (
         <StyledMemberForm role="form">
@@ -235,8 +236,15 @@ const MemberForm = () => {
                                  form-control`}
                                     id={field.name}
                                     aria-required="true"
-                                    placeholder={`Enter your ${field.name}`}
+                                    placeholder={`Enter your ${
+                                        field.name === 'tel'
+                                            ? field.name + ' (+66) XX XXX XXXX'
+                                            : field.name
+                                    }`}
                                     {...register(field.name)}
+                                    onPaste="return false"
+                                    onCopy="return false"
+                                    onCut="return false"
                                 />
                                 <small
                                     id="nameValidator"

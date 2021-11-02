@@ -1,12 +1,17 @@
 # ATC Membership (Beta version)
 
+[![Build Status](https://img.shields.io/badge/Build-Passed-success)](https://atc-membership.herokuapp.com)
+[![License](https://img.shields.io/badge/License-ATCT-blueviolet)](https://www.accenture.com/th-en/about/company/atc-thailand)
+[![Live Demo Server](https://img.shields.io/badge/Live%20Demo%20Server%20-Heroku-violet)](https://atc-membership.herokuapp.com)
+
+&nbsp;
 ![Demo Version](/src/images/demo.gif)
 
 _<p align="center"> Note: Please expect delay in my website response, Heroku server is in United State </p>_
 
 ATC Membership is a beta platform which use to keep contact in Advance Technology Center at Accenture. ATC Membership platform builds on ReactJS and this project is a beta version. So, this can only support Thai users and Thai format to input data.
 
-## Functionality Checklist
+## Key Features
 
 | No  | Functionality               | Status  | Note                    |
 | :-: | --------------------------- | :-----: | ----------------------- |
@@ -18,16 +23,6 @@ ATC Membership is a beta platform which use to keep contact in Advance Technolog
 |  6  | Watchlist                   | &check; | Optional Functionality  |
 |  7  | Search members              | &check; | Optional Functionality  |
 |  8  | User experience survey      | &check; | Optional Functionality  |
-
-## The way to see Prototyping, Live Demo, and result of survey
-
-| No  | Description                           | URL                                  | Note               |
-| :-: | ------------------------------------- | ------------------------------------ | ------------------ |
-|  1  | Prototyping                           | https://bit.ly/2ZGiI8c               | -                  |
-|  2  | Live Demo                             | https://atc-membership.herokuapp.com | -                  |
-|  3  | Accessibility score from Lighthouse   | https://bit.ly/3nKulUb               | -                  |
-|  4  | User Experience survey from HotJar #1 | https://bit.ly/3jWAbkd               | Scrolling Behavior |
-|  5  | User Experience survey from HotJar #2 | https://bit.ly/2ZHD4hp               | Screen Recording   |
 
 ## Setting up live server in local
 
@@ -44,7 +39,7 @@ npm run dev
 |  1  | Live Demo in local   | http://localhost:3000         |
 |  2  | JSON Server in local | http://localhost:3003/members |
 
-## Appendix Accessibility Testing
+## Colour Theory
 
 ### Colour Theme
 
@@ -55,6 +50,8 @@ _Colour Circle_
 _Colour Theme_
 
 ![Color Theme](/src/images/accessibility/theme.png)
+
+## Accessibility Testing results
 
 ### Colour Contrast Checker
 
@@ -79,5 +76,15 @@ _Checks aria attribute in my site_
 _Inspect the behavior of users when he/she use my platform_
 ![Heatmap Scrolling from HotJar image#1](/src/images/accessibility/heatmap.png)
 
+## Appendix URL
+
+| No  | Description                           | URL                                  | Note               |
+| :-: | ------------------------------------- | ------------------------------------ | ------------------ |
+|  1  | Prototyping                           | https://bit.ly/2ZGiI8c               | -                  |
+|  2  | Live Demo                             | https://atc-membership.herokuapp.com | -                  |
+|  3  | Accessibility score from Lighthouse   | https://bit.ly/3nKulUb               | -                  |
+|  4  | User Experience survey from HotJar #1 | https://bit.ly/3jWAbkd               | Scrolling Behavior |
+|  5  | User Experience survey from HotJar #2 | https://bit.ly/2ZHD4hp               | Screen Recording   |
+
 > Version: 1.1.1
-> Last update: 11/01/2021 18:00 GMT+7
+> Last update: 11/02/2021 18:00 GMT+7

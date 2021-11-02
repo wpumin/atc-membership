@@ -30,7 +30,7 @@ const Schema = yup
             .string()
             .trim()
             .required('tel ie required')
-            .phone('TH', true, '${path} in TH format eg. +66-XX-XXX-XXXX'),
+            .phone('TH', true, '${path} in TH format'),
         location: yup.string().trim().required('location is required'),
         comment: yup.string().trim().required('comment is required'),
     })

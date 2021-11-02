@@ -9,7 +9,6 @@ import RemoveButton from '../../../images/remove.svg'
 import EditButton from '../../../images/edit.svg'
 import WatchlistButton from '../../../images/watchlist.svg'
 import ViewButton from '../../../images/view.svg'
-import LoadingIcon from '../../../images/loading_purple.svg'
 
 const MemberList = (props) => {
     const { REACT_APP_JSON_SERVER } = process.env

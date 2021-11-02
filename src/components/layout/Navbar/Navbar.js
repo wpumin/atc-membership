@@ -109,34 +109,34 @@ const Navbar = () => {
                                 menu={menu.page}
                             />
                         ))}
-                        <li className="font-resize">
-                            <span className="d-block d-lg-none label">
+                        <li className="font-resize" key={MENUS.length + 1}>
+                            <button className="d-block d-lg-none label">
                                 Font size:
-                            </span>
-                            <span
+                            </button>
+                            <button
                                 className={`small ${
                                     fontSize === 14 && 'active'
                                 }`}
                                 onClick={() => fontSizeHandler('small')}
                             >
                                 A
-                            </span>{' '}
-                            <span
+                            </button>{' '}
+                            <button
                                 className={`medium ${
                                     fontSize === 16 && 'active'
                                 }`}
                                 onClick={() => fontSizeHandler('medium')}
                             >
                                 A
-                            </span>{' '}
-                            <span
+                            </button>{' '}
+                            <button
                                 className={`large ${
                                     fontSize === 18 && 'active'
                                 }`}
                                 onClick={() => fontSizeHandler('large')}
                             >
                                 A
-                            </span>
+                            </button>
                         </li>
                     </ul>
                 </div>
