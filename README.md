@@ -90,5 +90,5 @@ _Inspect the behavior of users when he/she use my platform_
 |  4  | User Experience survey from HotJar #1 | https://bit.ly/3jWAbkd               | Scrolling Behavior |
 |  5  | User Experience survey from HotJar #2 | https://bit.ly/2ZHD4hp               | Screen Recording   |
 
-> Version: 1.1.2
-> Last update: 11/02/2021 22:45 GMT+7
+> Version: 1.1.3
+> Last update: 11/03/2021 10:10 GMT+7

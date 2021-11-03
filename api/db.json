@@ -23,7 +23,6 @@
       "watchlist": true
     },
     {
-      "id": 3,
       "name": "Kawin Arwon",
       "department": "Application Development",
       "role": "Application Development Senior Analyst",
@@ -31,7 +30,8 @@
       "tel": "+66 62 475 1236",
       "location": "Bangkok Abdulrahim Place",
       "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
-      "watchlist": true
+      "watchlist": true,
+      "id": 3
     },
     {
       "id": 4,
@@ -122,13 +122,13 @@
       "watchlist": false
     },
     {
-      "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
-      "location": "Bangkok Abdulrahim Place",
-      "tel": "+66 2 475 1129",
-      "email": "p.thammachart@accenture.com",
-      "role": "Application Development Analyst",
-      "department": "Application Development",
       "name": "Puttipong Thammachart",
+      "department": "Application Development",
+      "role": "Application Development Analyst",
+      "email": "p.thammachart@accenture.com",
+      "tel": "+66 2 475 1129",
+      "location": "Bangkok Abdulrahim Place",
+      "comment": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries",
       "watchlist": true,
       "id": 12
     },

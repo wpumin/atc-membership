@@ -45,7 +45,7 @@ const Navbar = () => {
 
     const onChangeFontSize = (currentFontSize) => {
         document.body.style.fontSize = `${currentFontSize}px`
-        localStorage.setItem('fontSizeFromContext', currentFontSize)
+        localStorage.setItem('fontSize', currentFontSize)
         setFontSize(currentFontSize)
     }
 
