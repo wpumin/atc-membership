@@ -2,7 +2,7 @@
 
 [![Build Status](https://img.shields.io/badge/Build-Passed-success)](https://atc-membership.herokuapp.com)
 [![License](https://img.shields.io/badge/License-ATCT-blueviolet)](https://www.accenture.com/th-en/about/company/atc-thailand)
-[![Version](https://img.shields.io/badge/Version-1.1.2-critical)](https://github.com/wpumin/atc-membership/archive/refs/heads/master.zip)
+[![Version](https://img.shields.io/badge/Version-1.1.3-critical)](https://github.com/wpumin/atc-membership/archive/refs/heads/master.zip)
 [![Live Demo Server](https://img.shields.io/badge/Live%20Demo%20Server%20-Heroku-violet)](https://atc-membership.herokuapp.com)
 
 &nbsp;
